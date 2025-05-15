@@ -17,8 +17,8 @@
 #################################################################
 
 # if not already set, specify dotfiles repo remote and local locations
-dotfiles_dir="${dotfiles_dir}:-$home/projects/dotfiles"
-dotfiles_rep="${dotfiles_rep}:-https://github.com/ychie/dotfiles.git"
+DOTFILES_DIR="${DOTFILES_DIR:-$home/projects/dotfiles}"
+DOTFILES_REP="${DOTFILES_REP:-https://github.com/ychie/dotfiles.gib}"
 
 # list of packages to install
 core_packages=(
@@ -32,10 +32,9 @@ core_packages=(
 #################################################################
 
 # color variables
-purple='\033[0;35m'
-yellow='\033[0;93m'
-light='\x1b[2m'
-reset='\033[0m'
+PURPLE='\033[0;35m'
+YELLOW='\033[0;93m'
+RESET='\033[0m'
 
 #################################################################
 # macos helper functions										#
