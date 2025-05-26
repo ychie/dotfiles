@@ -1,0 +1,61 @@
+# Brewfile
+# Defines Homebrew packages, casks, and taps to be installed on this system
+# Used for setting up and syncing development environments
+# To install everything in this file, run: `brew bundle`
+
+# Options
+cask_args appdir: "~/Applications", require_sha: true
+
+# Taps
+tap 'jesseduffield/lazygit'
+
+# CLI Editors
+brew "neovim"
+brew "tmux"
+
+# CLI Tools
+brew "fzf"
+brew "jq"
+brew "sd"
+brew "ripgrep"
+
+# Terminals
+cask "kitty"
+
+# API Tools
+cask "postman"
+
+# Langs
+brew "lua"
+brew "ruby", link: true
+brew "rust"
+
+# Compilers
+brew "bazel@7"
+brew "node"
+
+# Git
+cask "fork"
+brew "lazygit"
+
+# DevOps cask "docker"
+
+# Swift
+brew "swiftformat"
+
+# Xcode
+brew "xcode-build-server"
+
+# Media
+cask "spotify", args: { require_sha: false }
+
+# Social
+cask "discord"
+
+# UI
+brew "sketchybar"
+cask "nikitabobko/tap/aerospace"
+brew "FelixKratz/formulae/borders"
+
+# Fonts
+cask "font-iosevka-nerd-font"
